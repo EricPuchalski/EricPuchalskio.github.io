@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:wght@500&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+
+        <header>
+            <a href="https://www.aluracursos.com/" target="__blank"><img src="img.png" alt="logo de alura latam" class="hero" ></a>
+        </header>
+        <main class="main">
+            <section class="text-sect">
+                <textarea name="" id="textArea" cols="30" rows="10" class="text" placeholder="Ingrese el texto aquí" class="texto"></textarea>
+                <i class="fa-solid fa-circle-exclamation excla"> SOLO LETRAS MINUSCULAS Y SIN ACENTO</i>
+                <div class="opc">
+                    <input type="button" value="Encriptar" class="encrypt" id="encrypt">
+                    <input type="button" value="Desencriptar" class="decrypt" id="decrypt">
+                </div>
+            </section>
+            <section class="warning" id="warning">
+                <div class="container-text" id="container-text">
+                    <textarea class="textResult" id="textResult" readonly></textarea>
+                    <input type="submit" class="copy" value="Copiar" id="copy"></input> 
+                    <input type="submit" class="clear" value="Vaciar" id="clear"></input>
+                </div>
+                <div class="container-img" id="container-img">
+                    <img src="munieco.png" alt="persona con lupa buscando texto" class="munieco">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="aboutMe" id="aboutMe">
+                <p>Página web responsiva hecha por <span class="name">&copy; Eric Puchalski;</span> estudiante de tecnicatura en programación</p>
+                <h3 id="changeColor" class="changeColor">Contacto y redes</h3>
+            </div>
+            <div class="socialNetworks" id="socialNetworks ">
+                <a href="https://www.linkedin.com/in/eric-puchalski/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin "></i></a>
+                <a href="https://app.aluracursos.com/user/ericpuchalski12" target="_blank"><img src="img.png" alt="" class="alura"></a>
+                <a href="https://github.com/EricPuchalski" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
+
+    <script src="https://kit.fontawesome.com/381dbbce8d.js" crossorigin="anonymous"></script> 
+    <script src="main.js"></script>
+
+</body>
+</html>
